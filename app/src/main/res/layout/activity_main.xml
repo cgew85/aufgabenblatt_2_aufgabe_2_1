@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical" >
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+        <RadioButton android:id="@+id/radio_morgens"
+                     android:checked="true"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/morgens"
+                     android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_abends"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/abends"
+                     android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <SeekBar
+            android:id="@+id/simpleSeekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="60"/>
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_send"
+            android:onClick="onButtonSaveClicked" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:id="@+id/summorgens"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/sum_morgens"/>
+        <TextView
+                android:id="@+id/sumabends"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/sum_abends"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:id="@+id/anzahlmorgens"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/anzahl_morgens"/>
+        <TextView
+                android:id="@+id/anzahlabends"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/anzahl_abends"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:orientation="horizontal">
+        <TextView
+                android:id="@+id/averagemorgens"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/average_morgens"/>
+        <TextView
+                android:id="@+id/averageabends"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/average_abends"/>
+    </LinearLayout>
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_reset"
+            android:onClick="onButtonResetClicked" />
+
+</LinearLayout>

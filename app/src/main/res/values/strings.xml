@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">appvma</string>
+    <string name="morgens">morgens</string>
+    <string name="abends">abends</string>
+    <string name="button_send">OK</string>
+    <string name="sum_morgens">Summe Morgens:</string>
+    <string name="sum_abends">Summe Abends:</string>
+    <string name="anzahl_morgens">Anzahl Morgens:</string>
+    <string name="anzahl_abends">Anzahl Abends:</string>
+    <string name="average_morgens">Durchschnitt Morgens:</string>
+    <string name="average_abends">Durchschnitt Abends:</string>
+    <string name="button_reset">Reset</string>
+</resources>
